@@ -1,2 +1,7 @@
 bind_addr = ":8080"
 log_level = "debug"
+
+[store]
+database_url = "host=localhost user=postgres password=fire dbname=restapi_dev sslmode=disable"
+
+# migrate.linux-amd64 -path migrations -database "postgres://postgres:fire@localhost/restapi_dev?sslmode=disable" up
